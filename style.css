@@ -1,0 +1,246 @@
+/* Styles Généraux */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* Header Orange (comme sur ton image) */
+header {
+    background-color: #FF4500; /* Orange vif */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+    height: 70px;
+}
+
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { font-weight: 300; }
+
+nav ul { list-style: none;
+     display: flex;
+      margin: 0; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Section Hero avec ton image */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('montre.jpg..jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.hero-content { color: white; max-width: 600px; }
+
+.hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
+
+/* Bouton Arrondi */
+.btn {
+    display: inline-block;
+    background-color: #FF4500;
+    color: white;
+    padding: 18px 45px;/* pour la largeur */
+    text-decoration: none;
+    border-radius: 50px; /* sa va etre un peu plus rond */
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover { background-color: #e63e00; transform: scale(1.05); }
+/* --- SECTION PRODUITS --- */
+.products {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Grille pour aligner 3 produits proprement */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Pour que ça passe l'un sous l'autre sur mobile */
+}
+
+.product-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Pour que l'image ne soit pas déformée */
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.price {
+    color: #FF4500;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* --- BOUTON WHATSAPP --- */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366; /* Vert WhatsApp officiel */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+/* --- LE PIED DE PAGE --- */
+.footer {
+    background-color: #1a1a1a; /* Noir élégant */
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer h3 span {
+    color: #FF4500; /* Rappel du orange de ton bouton */
+}
+
+.footer-info {
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+/* --- LE BOUTON FLOTTANT VERT --- */
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 13px; /* Distance du bas */
+    right: 13px;   /* Distance de la droite */
+    background-color: #25D366; /* Vert WhatsApp */
+    color: white !important; /* Texte en blanc */
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 50px; /* Forme arrondie */
+    text-decoration: none !important; /* Enlever le soulignement bleu */
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10000; /* Pour passer devant tout le reste */
+    transition: 0.3s;
+}
+
+/* Style du logo WhatsApp à l'intérieur */
+.whatsapp-fixed img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Effet au survol de la souris */
+.whatsapp-fixed:hover {
+    transform: scale(1.1); /* Il grossit un peu */
+    background-color: #128C7E; /* Vert plus foncé */
+}
+/* --- STYLE DES RÉSEAUX SOCIAUX --- */
+.social-links {
+    margin: 20px 0;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+/* Couleur TikTok (Noir/Rose/Bleu) */
+.tiktok {
+    background: #000000;
+    border: 1px solid #ff0050;
+}
+
+/* Couleur Instagram (Dégradé) */
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+/* --- ADAPTATION MOBILE CORRIGÉE --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row !important; /* Force le logo et le menu sur la même ligne */
+        justify-content: space-between !important;
+        padding: 10px 3% !important;
+        height: auto; /* Laisse le header s'adapter à la hauteur du contenu */
+    }
+
+    nav ul {
+        flex-direction: row !important; /* Garde les liens côte à côte */
+        gap: 10px; /* Réduit l'espace entre les liens pour que ça tienne */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Réduit la taille du texte pour mobile */
+    }
+
+    .hero h1 {
+        font-size: 22px; /* Réduit le gros titre pour qu'il ne dépasse pas */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Les montres restent l'une sous l'autre */
+    }
+}
